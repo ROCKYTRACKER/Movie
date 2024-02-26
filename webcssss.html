@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <style>
+     .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(25, 47, 191, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(136, 135, 139);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    z-index: 1;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 29px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+img{
+     display:block;
+     margin-left: auto;
+     margin-right: auto;
+  }
+  h1{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0;letter-spacing:4px;
+    text-align: center;
+  }
+ h2,h3,h5 {font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0 }.w3-wide{letter-spacing:4px}
+ .ru{
+background-position: relative;
+margin-left: 15%;
+margin-right: 15%;
+text-align: center;
+ }
+ .tt{
+    display: block;
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: #c6c2c7;
+    text-align: center;
+     }
+        .t-padding{padding:8px 16px}
+.t-ul{list-style-type:none;padding:0;margin:0}.t-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.t-ul li:last-child{border-bottom:none}
+.list-group{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#yoga{
+  margin-left: 16%;
+}
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">HOME</a></li>
+        <li><a href="#news">SHOWTIMES</a></li>
+        <li><a href="#contact">TICKET CHANGES</a></li>
+        <li><a href="#about">CONTACT</a></li>
+        <li><a href="#news">MORE</a></li>
+      </ul>
+      
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="wp3300602.jpg" style="width:100%">
+          <div class="text">New York</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="nGyaoq7.jpg" style="width:100%">
+          <div class="text">Los Angeles</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="9g8EaUq.jpg" style="width:100%">
+          <div class="text">Chicago</div>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <div class="ru">
+        <br>
+        <br>
+        <h1>TOP FILMS</h1>
+        <h5 style="color: gray;"><i>According to viewers</i></h5>
+       <p>Online booking of movie tickets has been proved a boon for movie fans regardless of them being a fan of Hollywood or Bollywood or their interest in regional movies. Either alone or watching a movie with your group, everybody wants to sit on the cinema theater seats according to their wish. Online booking gave customers the freedom to book the seats as per their choice.</p>
+      <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>JOKER</h3>
+            <p><img src="joker-2019-movie-joker-joaquin-phoenix-actor-men-hd-wallpaper-preview.jpg"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tt">
+       <br>
+       <br>
+       
+        <h1><font style="color: white;">BOOK DATES</font></h1>
+        <h5 style="color: gray;"><i>Remember to book your Tickets!!</i></h5>
+        <br>
+        <br>
+        <div class="container mt-2">
+        <ul class="list-group w-60">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              SEPTEMBER<span class="badge bg-danger">Sold Out</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              OCTOBER<span class="badge bg-danger">Sold Out</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              NOVEMBER
+              <span class="badge bg-primary rounded-pill">2</span>
+            </li>
+          </ul>
+          <br>
+          <br>
+          <div class="row" id="yoga">
+           <div class="card col-sm-4" style="width:280px">
+              <img class="card-img-top" src="joker-2019-movie-joker-joaquin-phoenix-actor-men-hd-wallpaper-preview.jpg" style="width: 100%;">
+              <div class="card-body">
+                <h4 class="card-title">JOKER</h4>
+                <h5>15 FEB 2019</h5>
+                <p>Kim Masters of The Hollywood Reporter said Warner Bros. was reluctant to let Joker move forward and gave it a small budget in an effort to dissuade Phillips</p>
+                <a href="#" class="btn btn-dark">Buy Ticket</a>
+              </div>
+            </div>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+            <div class="card col-sm-4" style="width:280px">
+              <img class="card-img-top" src="rajinikanth-jailer-hd-images-002-683x1024.jpg" style="width: 100%;">
+              <div class="card-body">
+                <h4 class="card-title">JAILER</h4>
+                <h5>27 N0v 2023</h5>
+                <p>A retired jailer goes on a manhunt to find his son's killers. But the road leads him to a familiar, albeit a bit darker place. Can he emerge from this complex situation successfully?</p>
+                <a href="#" class="btn btn-dark">Buy Ticket</a>
+              </div>
+            </div> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <div class="card col-sm-4" style="width:280px">
+              <img class="card-img-top" src="movies-dark-wednesday-addams-wednesday-tv-series-movie-poster-hd-wallpaper-preview.jpg" style="width: 100%;">
+              <div class="card-body">
+                <h4 class="card-title">WEDNESDAY</h4>
+                <h5>27 N0v 2023</h5>
+                <p>Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends and foes  at Nevermore Academy</p>
+                <a href="#" class="btn btn-dark">Buy Ticket</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container mt-5  bg-light">
+      <div class="row">
+        <div class="col-sm-4"><h4>More about Company</h4>&nbsp; &nbsp;<p><i>“Please, no matter how we advance technologically, please don’t abandon the book. There is nothing in our material world more beautiful than the book.” ,<br><strong>― Patti Smith</strong></i></p></div>
+          <div class="col-sm-4"><h4>Keep Connected</h4>&nbsp;<ul style="list-style-type: none;">
+            <li><button class="btn btn-outline-danger">Facebook</button></li><br>
+            <li><button class="btn btn-outline-danger">Twitter</button></li><br> 
+            <li><button class="btn btn-outline-danger">Google</button></li><br>
+            <li><button class="btn btn-outline-danger">Pinterest</button></li>
+          </ul></div>
+          <div class="col-sm-4"><h4>Contact Information</h4>&nbsp;
+          <form>
+            First Name: &nbsp; <input type="text"><br><br>
+  
+            Last Name: &nbsp; <input type="text"><br><br>
+  
+            Phone Number: <input type="number"><br><br>
+  
+            Email Id: <input type="email">
+            &nbsp; &nbsp;
+            <button btn btn-outline-danger>SUBMIT</button>
+          </form>
+           </div>
+    <script>
+     let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>
